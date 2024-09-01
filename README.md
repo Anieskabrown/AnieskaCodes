@@ -1,3 +1,4 @@
+
 # About Me:
 
 Hello! My name is Anieska Zakiya 👋 a member of the **CFG Degree Autumn Cohort 2024**. I am really excited to begin this journey towards pursing a career in software development,where the challenge of learning to code is very rewarding. I am eager to explore various software tools. I _LOVE_ reading romace novals 💌 🥰 and listening to 90's R&B 🎵.
@@ -15,3 +16,5 @@ This Respository was created as a part of my ***CFG Degree course***, it is wher
 
 * ***Email***: Zakiyabrown240@gmail.com
 * ***Connect with me:*** (https://www.linkedin.com/in/anieskabrown/)
+
+Author Anieska Zakiya Brown
