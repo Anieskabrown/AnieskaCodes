@@ -1,0 +1,277 @@
+Last login: Sun Sep  1 23:03:51 on ttys000
+zakiyabrown@Zakiyas-iMac ~ % git config --global user.name "Zakiya Brown"
+zakiyabrown@Zakiyas-iMac ~ % git config --global user.name "zakiyabrown240@gmail.com
+dquote> "
+zakiyabrown@Zakiyas-iMac ~ % git config --list
+credential.helper=osxkeychain
+init.defaultbranch=main
+user.name=zakiyabrown240@gmail.com
+
+zakiyabrown@Zakiyas-iMac ~ % cd ~/documents/
+zakiyabrown@Zakiyas-iMac documents % cd ./git\ demo
+cd: no such file or directory: ./git demo
+zakiyabrown@Zakiyas-iMac documents % cd ./Git\ Demo
+cd: no such file or directory: ./Git Demo
+zakiyabrown@Zakiyas-iMac documents % ls
+My Tableau Repository
+zakiyabrown@Zakiyas-iMac documents % pwd
+/Users/zakiyabrown/documents
+zakiyabrown@Zakiyas-iMac documents % mkdir "git demo"
+cd "git demo"
+zakiyabrown@Zakiyas-iMac git demo % git init
+Initialized empty Git repository in /Users/zakiyabrown/Documents/git demo/.git/
+zakiyabrown@Zakiyas-iMac git demo % ls -a
+.	..	.git
+zakiyabrown@Zakiyas-iMac git demo % nano hello_world.py
+zakiyabrown@Zakiyas-iMac git demo % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hello_world.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+zakiyabrown@Zakiyas-iMac git demo % git add hello_world.py
+zakiyabrown@Zakiyas-iMac git demo % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   hello_world.py
+
+zakiyabrown@Zakiyas-iMac git demo % git commit -m "My First Python Code"
+[main (root-commit) 627b403] My First Python Code
+ Committer: zakiyabrown240@gmail.com <zakiyabrown@Zakiyas-iMac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.py
+zakiyabrown@Zakiyas-iMac git demo % git config --global user.name "Zakiya Brown"
+zakiyabrown@Zakiyas-iMac git demo % git config --global user.name "zakiyabrown240@gmail.com"
+zakiyabrown@Zakiyas-iMac git demo % git status
+On branch main
+nothing to commit, working tree clean
+zakiyabrown@Zakiyas-iMac git demo % cd ..
+zakiyabrown@Zakiyas-iMac documents % ls
+My Tableau Repository	git demo
+zakiyabrown@Zakiyas-iMac documents % cd ..
+zakiyabrown@Zakiyas-iMac ~ % ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/Users/zakiyabrown/.ssh/id_ed25519):             
+/Users/zakiyabrown/.ssh/id_ed25519 already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/zakiyabrown/.ssh/id_ed25519
+Your public key has been saved in /Users/zakiyabrown/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:v1FWRtODG2Vcff5MRzP2f9M3nv2LKrWPQ4tFGYw6kV8 zakiyabrown@Zakiyas-iMac.local
+The key's randomart image is:
++--[ED25519 256]--+
+|        . o   *++|
+|       o . E +.B=|
+|        + . o *o*|
+|       o . o +  =|
+|        S . o  o=|
+|         . *   oB|
+|          B o . B|
+|         o *. .o.|
+|          oo+o .+|
++----[SHA256]-----+
+zakiyabrown@Zakiyas-iMac ~ % cat /Users/zakiyabrown/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILYsZ95ZReIP4xeCVauqhvNd5hUu88fqYmsCmR607if4 zakiyabrown@Zakiyas-iMac.local
+zakiyabrown@Zakiyas-iMac ~ % cd git demo
+cd: string not in pwd: git
+zakiyabrown@Zakiyas-iMac ~ % pwd
+/Users/zakiyabrown
+zakiyabrown@Zakiyas-iMac ~ % ls
+CFG-Assignment		Git Demo		Pictures		hello-world
+Desktop			Library			Public			postgresql_12.app.zip
+Documents		Movies			cfg-python		testrepo
+Downloads		Music			git_reset_test
+zakiyabrown@Zakiyas-iMac ~ % cd testrepo
+zakiyabrown@Zakiyas-iMac testrepo % cat hello_world.py
+cat: hello_world.py: No such file or directory
+zakiyabrown@Zakiyas-iMac testrepo % cd ..
+zakiyabrown@Zakiyas-iMac ~ % cd git demo
+cd: string not in pwd: git
+zakiyabrown@Zakiyas-iMac ~ % pwd
+/Users/zakiyabrown
+zakiyabrown@Zakiyas-iMac ~ % ls
+CFG-Assignment		Git Demo		Pictures		hello-world
+Desktop			Library			Public			postgresql_12.app.zip
+Documents		Movies			cfg-python		testrepo
+Downloads		Music			git_reset_test
+zakiyabrown@Zakiyas-iMac ~ % cd Git Demo
+cd: string not in pwd: Git
+zakiyabrown@Zakiyas-iMac ~ % pwd
+/Users/zakiyabrown
+zakiyabrown@Zakiyas-iMac ~ % ls
+CFG-Assignment		Git Demo		Pictures		hello-world
+Desktop			Library			Public			postgresql_12.app.zip
+Documents		Movies			cfg-python		testrepo
+Downloads		Music			git_reset_test
+zakiyabrown@Zakiyas-iMac ~ % cd /Users/zakiyabrown/Documents/git demo
+cd: string not in pwd: /Users/zakiyabrown/Documents/git
+zakiyabrown@Zakiyas-iMac ~ % cd ./git\ demo
+zakiyabrown@Zakiyas-iMac git demo % cat hello_world.py
+Hello.World.py
+zakiyabrown@Zakiyas-iMac git demo % cd .
+zakiyabrown@Zakiyas-iMac git demo % 
+zakiyabrown@Zakiyas-iMac git demo % ls
+hello_world.py	testrepo
+zakiyabrown@Zakiyas-iMac git demo % cd ..
+zakiyabrown@Zakiyas-iMac ~ % ls\
+> 
+CFG-Assignment		Git Demo		Pictures		hello-world
+Desktop			Library			Public			postgresql_12.app.zip
+Documents		Movies			cfg-python		testrepo
+Downloads		Music			git_reset_test
+zakiyabrown@Zakiyas-iMac ~ % git clone git@github.com:Anieskabrown/CFG-Assignments-and-Projects.git
+Cloning into 'CFG-Assignments-and-Projects'...
+Enter passphrase for key '/Users/zakiyabrown/.ssh/id_ed25519': 
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+zakiyabrown@Zakiyas-iMac ~ % ls
+CFG-Assignment			Library				git_reset_test
+CFG-Assignments-and-Projects	Movies				hello-world
+Desktop				Music				postgresql_12.app.zip
+Documents			Pictures			testrepo
+Downloads			Public
+Git Demo			cfg-python
+zakiyabrown@Zakiyas-iMac ~ % cd CFG-Assignments-and-Projects/
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % ls
+README.md
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % cat README.md
+# About Me:
+
+Hello! My name is Anieska Zakiya 👋 a member of the **CFG Degree Autumn Cohort 2024**. I am really excited to begin this journey towards pursing a career in software development,where the challenge of learning to code is very rewarding. I am eager to explore various software tools. I _LOVE_ reading romace novals 💌 🥰 and listening to 90's R&B 🎵.
+
+
+# Purpose of this Repository:
+
+
+This Respository was created as a part of my ***CFG Degree course***, it is where i will sort all my assignments. I will be using Github to:
+* ***Learn and improve:*** I will be utilising github as a learning tool to help me better understand version control and branching etc.
+* ***Collaborate with my peers:*** I will be collaborating with my peers in group work and or instructors, sharing code building projects and getting feedback.
+* ***Track my progress:*** I will be documenting my work and progress.
+
+# Contact me:
+
+* ***Email***: Zakiyabrown240@gmail.com
+* ***Connect with me:*** (https://www.linkedin.com/in/anieskabrown/)
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git remote -v
+origin	git@github.com:Anieskabrown/CFG-Assignments-and-Projects.git (fetch)
+origin	git@github.com:Anieskabrown/CFG-Assignments-and-Projects.git (push)
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % nano READ.md
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % nano README.md
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % cat README.md
+
+# About Me:
+
+Hello! My name is Anieska Zakiya 👋 a member of the **CFG Degree Autumn Cohort 2024**. I am really excited to begin this journey towards pursing a career in software development,where the challenge of learning to code is very rewarding. I am eager to explore various software tools. I _LOVE_ reading romace novals 💌 🥰 and listening to 90's R&B 🎵.
+
+
+# Purpose of this Repository:
+
+
+This Respository was created as a part of my ***CFG Degree course***, it is where i will sort all my assignments. I will be using Github to:
+* ***Learn and improve:*** I will be utilising github as a learning tool to help me better understand version control and branching etc.
+* ***Collaborate with my peers:*** I will be collaborating with my peers in group work and or instructors, sharing code building projects and getting feedback.
+* ***Track my progress:*** I will be documenting my work and progress.
+
+# Contact me:
+
+* ***Email***: Zakiyabrown240@gmail.com
+* ***Connect with me:*** (https://www.linkedin.com/in/anieskabrown/)
+
+Author Anieska Zakiya Brown
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	READ.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git restore READ.md
+error: pathspec 'READ.md' did not match any file(s) known to git
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git add README.md
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	READ.md
+
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git rm READ.md
+fatal: pathspec 'READ.md' did not match any files
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % ls
+READ.md		README.md
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git commit -m 'Added author to README'
+[main ad00fea] Added author to README
+ Committer: zakiyabrown240@gmail.com <zakiyabrown@Zakiyas-iMac.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git status 
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	READ.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git push 
+Enter passphrase for key '/Users/zakiyabrown/.ssh/id_ed25519': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:Anieskabrown/CFG-Assignments-and-Projects.git
+   0478dc2..ad00fea  main -> main
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % git push origin main
+Enter passphrase for key '/Users/zakiyabrown/.ssh/id_ed25519': 
+Everything up-to-date
+zakiyabrown@Zakiyas-iMac CFG-Assignments-and-Projects % 
