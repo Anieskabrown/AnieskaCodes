@@ -1,1 +1,4 @@
 text requirments
+
+
+_**requirment texts are typically used for libraries that are used to work on projects. in the root of the directory.**_
