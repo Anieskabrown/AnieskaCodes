@@ -1,6 +1,11 @@
+A Gitignore file is used to to tell repository to ignore my personal files and only focus on my group project.
+
+
 # Ignore all .log files
 *.log
 
 
 # Ignore macOS system files
 .DS_Store
+
+
