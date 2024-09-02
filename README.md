@@ -1,7 +1,7 @@
 
 # About Me: 👧
 
-Hello! My name is Anieska Zakiya 👋 a member of the **CFG Degree Autumn Cohort 2024**. I am really excited to begin this journey towards pursing a career in software development,where the challenge of learning to code is very rewarding. I am eager to explore various software tools. I _LOVE_ reading romace novals 💌 🥰 and listening to 90's R&B 🎵.
+Hello! My name is _**Anieska Zakiya**_ 👋 a member of the **CFG Degree Autumn Cohort 2024**. I am really excited to begin this journey towards pursing a career in software development,where the challenge of learning to code is very rewarding. I am eager to explore various software tools. I _LOVE_ reading romace novals 💌 🥰 and listening to 90's R&B 🎵.
 
 
 # Purpose of this Repository:
