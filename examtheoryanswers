@@ -1,0 +1,73 @@
+Q1 Explain the difference between a primary key and a foreign key.
+
+ Primary Key is a unique identifier for a record in a table. No two rows can have the same primary key,
+and it cannot be NULL , Whereas 
+foreign Key is a  field in a table that links to the primary key of another table. 
+It ensures referential integrity between two tables. 
+
+
+Q2 What is the role of the finally block in Python exception handling, and how would you use it?
+
+The finally block in Python is used to execute code after a try and except block, 
+regardless of whether an exception was raised or not. It’s often used for cleanup actions 
+like closing files or network connections.
+
+Q3 Explain the difference between a commit and a push in Git.
+
+	•	Commit: This saves changes to the local Git repository. It records a snapshot of the project at that point.
+	•	Example: git commit -m "Initial commit"
+	•	Push: This sends the committed changes from the local repository to a remote repository like GitHub.
+	•	Example: git push origin main
+
+Q4 Provide examples of two web APIs and describe their functionalities.
+
+	1.	Twitter API: Allows developers to interact with Twitter data, such as posting tweets, retrieving user information, and analyzing trends.
+	2.	Google Maps API: Provides location-based services, enabling developers to display maps, search for places, and calculate distances.
+
+Q5 Describe four tasks in the role of the Product Owner in Agile development.
+
+	1.	Define the product backlog: The Product Owner creates and prioritizes a list of tasks or features that need to be developed.
+	2.	Act as a liaison between stakeholders and the team: They ensure that the team understands the product vision and stakeholder needs.
+	3.	Set priorities for sprints: The Product Owner decides which features or tasks should be worked on in each development cycle (sprint).
+	4.	Accept or reject completed work: They review the work completed by the team and ensure it meets the criteria.
+
+ Q6 Name two types of SQL joins and provide an example scenario for each.
+
+	1.	INNER JOIN: Returns only the records that have matching values in both tables.
+	•	Scenario: If you I had  a “Customers” and “Orders” table, and id want to get only the customers who have made an order.
+
+SELECT Customers.name, Orders.order_date 
+FROM Customers 
+INNER JOIN Orders ON Customers.customer_id = Orders.customer_id;
+
+
+	2.	LEFT JOIN (or LEFT OUTER JOIN): Returns all records from the left table and the matched records from the right table. If there is no match, the result is NULL.
+	•	Scenario: If I want to list all customers, even if they haven’t made an order.
+
+SELECT Customers.name, Orders.order_date 
+FROM Customers 
+LEFT JOIN Orders ON Customers.customer_id = Orders.customer_id;
+
+Q7 Explain the difference between mutable and immutable data types in Python, provide an example of each.
+
+	•	Mutable data types: These can be changed after creation. Lists, dictionaries, and sets are mutable.
+	•	Example:
+my_list = [1, 2, 3]
+my_list[0] = 0  # The list is modified
+print(my_list)  # Output: [0, 2, 3]
+
+
+	•	Immutable data types: These cannot be changed after creation. Strings, integers, and tuples are immutable.
+	•	Example:
+
+my_string = "Hello"
+my_string[0] = "h"
+
+Q 8 Explain both Agile and Waterfall approaches to Software Development, and at least 2 differences between them.
+
+	•	Agile: A flexible, iterative approach to software development where requirements and solutions evolve through collaboration.
+	•	Features continuous delivery, frequent feedback, and adaptation.
+	•	Waterfall: A linear, sequential approach where each phase (e.g., requirements, design, implementation) must be completed before moving to the next.
+Differences:
+	1.	Flexibility: Agile is flexible and adaptive, allowing changes at any stage. Waterfall is rigid and less adaptive to changes.
+	2.	Testing: In Agile, testing is done continuously throughout the project. In Waterfall, testing is done at the end of the development cycle.
