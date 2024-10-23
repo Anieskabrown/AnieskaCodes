@@ -1,0 +1,163 @@
+Section One: Multiple Choice Questions (10 marks) 
+
+Question 1: 
+
+What is the output of the following python equation: 5 + 3 / 2 ?
+
+A.	6.5 – my answer
+B.	4
+C.	4.0
+D.	7
+
+Question 2: 
+
+What would be the first line and last line output of the following python code?
+ 
+A.	First line: o
+Last line: ooooooooo- My answer
+B.	First line: 0
+Last line: 0000000000
+C.	First line: 
+Last line: ooooooooo
+D.	First line: o
+Last line: oo
+
+Question 3: 
+
+Which of these is a necessary feature of an efficient loop?
+
+A.	Iterates through a string  
+B.	Works in ascending order
+C.	Return statement
+D.	Exit condition-my answer
+
+Question 4: 
+
+Which statement is not true about the functionality of Python’s return statement?
+
+A.	It exits the function 
+B.	By default it gives a None value
+C.	It prints a message to the console- My Answer
+D.	It gives a value back to where it was called
+
+
+Question 5: 
+
+Which of the following adds a string from a list of  courses, to a new list if the string contains “cfg” 
+My Answer is B
+A.	
+for course in courses: 
+  if course.contains(“cfg”): 
+  courses.append(course) 
+B.	
+new_list = [x for x in courses if "cfg" in x]
+C.	
+new_list = {x for x in courses if "cfg" in x}
+D.	
+new_list = [ ]
+for course in courses:
+   if course.contains(“cfg”):
+      new_list.append(course)
+
+
+Question 6: 
+
+What does the SQL statement "SELECT COUNT(DISTINCT column_name) FROM table_name;" do?
+
+A.	Counts the total number of rows in the table
+B.	Counts the number of unique values in the specified column – MY ANSWER
+C.	Retrieves the average value of the specified column
+D.	Returns the sum of all values in the specified column
+
+Question 7: 
+
+Which SQL operator is used to retrieve rows that exist in the first table but not in the second table in a JOIN operation? 
+ANSWER IS B
+A.	INNER JOIN
+B.	LEFT JOIN-MY ANSWER
+C.	RIGHT JOIN
+D.	OUTER JOIN
+
+
+
+Question 8: 
+
+A company wants to retrieve all employees that work in the sales department where their salary is greater than £50,000. Which SQL query can achieve this?
+MY answer is A
+A.	SELECT * FROM employees WHERE department = “sales” AND salary > 50000; MY ANSWER
+B.	SELECT * FROM employees WHERE department == “sales” AND salary > 50000;
+C.	SELECT * FROM employees WHERE department = “sales” OR salary > 50000;
+D.	SELECT * FROM employees WHERE department = “sales” OR salary < 50000;
+
+
+Question 9: 
+
+ Look at the following tables: "students" and "courses."  
+
+Which SQL query is used to retrieve the names of students who have not enrolled in any courses?
+MY ANSWER IS B
+A.	SELECT student_name FROM students;
+B.	SELECT student_name FROM students LEFT JOIN courses ON students.student_id = courses.student_id WHERE courses.course_id IS NULL;
+C.	SELECT student_name FROM students INNER JOIN courses ON students.student_id = courses.student_id WHERE courses.course_id IS NULL;
+D.	SELECT student_name FROM students JOIN courses ON students.student_id = courses.student_id WHERE courses.course_id IS NULL;
+
+
+Question 10: 
+
+Review the table named "employees" with columns "employee_id" and "salary."
+ 
+Which SQL query can be used to find the lowest salary among employees with salaries greater than $50,000 in the "employees" table?
+my answer is A
+
+A.	SELECT MIN(salary) FROM employees WHERE salary > 50000;
+B.	SELECT DISTINCT salary FROM employees WHERE salary > 50000 ORDER BY salary DESC LIMIT 1;
+C.	SELECT salary FROM employees WHERE salary < 50000 ORDER BY salary ASC LIMIT 1;
+D.	SELECT TOP 1 salary FROM employees WHERE salary > 50000 ORDER BY salary ASC;
+
+SECTION TWO
+1. Identify and correct any errors in the code:
+Error 1: Handling of NULL in the subquery condition.
+The condition department_name = NULL in the subquery is incorrect. In SQL, NULL cannot be checked using the equality operator =. Instead, the IS NULL operator should be used.
+
+Correction:
+(SELECT department_id FROM departments WHERE department_name = 'Cardiology' OR department_name IS NULL)
+
+SUGGESTION TO IMPROVE;
+Suggestion 1: Remove unnecessary OR department_name IS NULL condition.
+
+If the intention is to only get data from the Cardiology department, 
+there is no need to check if the department name is NULL. This would make the query more specific and faster.
+
+(SELECT department_id FROM departments WHERE department_name = 'Cardiology')
+
+Suggestion 2: Avoid correlated subquery if possible.
+
+The subquery in the WHERE clause retrieves the department_id from the departments table. 
+If the admissions table already contains the department_id for Cardiology, 
+you can simplify the query by joining the departments table directly. 
+Joins tend to be more efficient than correlated subqueries for performance.
+
+Optimization using JOIN:
+SELECT 
+    a.patient_id, 
+    COUNT(*) AS admission_count 
+FROM 
+    admissions a
+JOIN 
+    departments d ON a.department_id = d.department_id 
+WHERE 
+    d.department_name = 'Cardiology' 
+    AND a.admission_date >= '2015-01-01' 
+GROUP BY 
+    a.patient_id 
+ORDER BY 
+    admission_count DESC 
+LIMIT 1;
+
+
+
+
+
+
+
+
