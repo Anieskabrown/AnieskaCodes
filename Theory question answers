@@ -1,0 +1,51 @@
+# Answers to Theory Questions
+
+---
+
+## 1.1  
+**Answer:**  
+The collections library.
+
+---
+
+## 1.2  
+**Answer:**  
+*** A tree is actually a specific type of graph, but it comes with some strict rules. For a graph to be a tree, it must be connected and acyclic—basically, 
+there can’t be any loops or cycles. Another key difference is that a tree always has one root node and follows a clear hierarchical structure. 
+On the other hand, a graph doesn’t have to follow those rules—it can have multiple roots, no roots at all, and no hierarchy.
+---
+
+## 1.3  
+**Answer:**  
+1. **Time Com plexity:** The measure of the amount of time an algorithm takes to run as a function of the input size.  
+2. **Space Complexity:** The measure of the amount of memory or storage an algorithm requires as a function of the input size.
+
+---
+
+## 1.4  
+**Answer:**  
+- **Bubble Sort:** This algorithm repeatedly compares adjacent elements and swaps them if they are in the wrong order. This process continues until the list is sorted.  
+- **Complexity:**  
+  - Best case: **O(n)** (when the list is already sorted).  
+  - Worst and average case: **O(n²)**.  
+- **After the first pass:** The largest element will be correctly placed at the end of the list.
+
+---
+
+## 1.5  
+**Answer:**  
+1. **LIFO (Last In, First Out):** The last item added is the first one to be removed.  
+   - **Example:** Stack (e.g., a stack of plates—add and remove from the top).  
+2. **FIFO (First In, First Out):** The first item added is the first one to be removed.  
+   - **Example:** Queue (e.g., a line at a checkout—first come, first served).
+
+---
+
+## 1.6  
+**Answer:**  
+1. **Balanced Binary Tree:** A binary tree where the height difference between the left and right subtrees of any node is at most 1. This ensures efficient operations.  
+2. **Best Root:** Ideally, the middle element of a sorted dataset, as this minimizes the height of the tree.  
+3. **Search:** To find a value:  
+   - Start at the root and compare the value.  
+   - If the value is smaller, move to the left subtree; if larger, move to the right.  
+   - Repeat until the value is found or the subtree is empty.
