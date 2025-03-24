@@ -14,7 +14,7 @@ This Respository was created as a part of my ***CFG Degree course***, it is wher
 
 # Contact me:
 
-* ***Email***: Zakiyabrown240@gmail.com
+* ***Email***: anieskabrown425@outlook.com
 * ***Connect with me:*** (https://www.linkedin.com/in/anieskabrown/)
 
 ![](https://codefirstgirls.com/wp-content/uploads/2022/04/CFGDegree-Logo-2.png)
